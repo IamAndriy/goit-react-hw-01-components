@@ -1,7 +1,6 @@
 .statistics{
     max-width: 300px;
     width: 100%;
-    padding-top: 20px;
     font-size: 20px;
     color: rgb(72, 71, 71);
     background-color: white;
@@ -9,6 +8,7 @@
 .title{
     width: 100%;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .stats-list{

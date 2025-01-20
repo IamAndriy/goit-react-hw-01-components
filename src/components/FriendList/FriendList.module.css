@@ -1,0 +1,40 @@
+.section{
+    max-width: 300px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(72, 71, 71);
+}
+.friend-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.friend{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px grey;
+
+    .status{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: lightgray;
+    }
+    .avatar{
+
+    }
+    .name{
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+    .is-online{
+        background-color: rgb(20, 176, 20);
+    }
+}
