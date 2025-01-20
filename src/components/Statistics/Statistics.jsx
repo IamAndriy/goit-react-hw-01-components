@@ -16,7 +16,7 @@ export const Statistics = ({title, stats=[]})=> {
                                             {stats.map(item => {
                                                 return <li className={css.item} key={item.id} style={{backgroundColor: getRandomHexColor(), flexBasis : calcWidth}}>
                                                         <span className={css.label}>{item.label}</span>
-                                                        <span className={css.percentage}>{item.percentage}</span>
+                                                        <span className={css.percentage}>{item.percentage}%</span>
                                                     </li>
                                                 })
                                             }
