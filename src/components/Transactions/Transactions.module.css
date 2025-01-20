@@ -1,0 +1,24 @@
+.transactions{
+    max-width: 300px;
+    width: 100%;
+}
+.transaction-history{
+    display: table;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    .th-thead{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color:#6faeae;
+        color: white;
+    }
+    .td-body{
+        padding: 5px 20px;
+        text-align: center;
+    }
+    .tr-body:nth-child(odd){
+        background-color:#b6fafa;
+    }
+}
