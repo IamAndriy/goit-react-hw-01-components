@@ -1,5 +1,8 @@
 import {Profile} from "../Profile/Profile";
-import user from '../../user.json';
+import {Statistics} from "../Statistics/Statistics";
+
+import user from './user.json';
+import data from './data.json';
 import css from "./App.module.css";
 
 
@@ -15,6 +18,13 @@ export const App = () => {
         avatar={user.avatar}
         stats = {user.stats}
       />
+      
+      <Statistics 
+        title="Statistics"
+        stats={data}
+      />
+
+
     </div>
   );
 };

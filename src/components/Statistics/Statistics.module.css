@@ -1,0 +1,31 @@
+.statistics{
+    max-width: 300px;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(72, 71, 71);
+    background-color: white;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.stats-list{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    .item{
+         padding-top: 10px; 
+         padding-bottom: 10px; 
+         gap: 10px;
+    }
+    .label{
+        font-size: 16px;
+    }    
+    .percentage{
+        font-size: 18px;
+        font-weight: 700;
+    }    
+}
