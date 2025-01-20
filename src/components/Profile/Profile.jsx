@@ -1,6 +1,5 @@
 import css from './Profile.module.css';
 import defaultAvatar from "../../assets/images/logo192.png";
-import { Statistics } from "components/Statistics/Statistics";
 
 export const Profile = ({username="unknownUser", tag="unknownUser", location="unknown", avatar=defaultAvatar, stats={}}) => {
 
@@ -12,7 +11,21 @@ export const Profile = ({username="unknownUser", tag="unknownUser", location="un
                     <p className={css.tag}>{tag}</p>
                     <p className={css.location}>{location}</p>
                 </div>
-                <Statistics stats={stats}/>
+                
+                <ul className={css.stats}>
+                    <li key="folovers">
+                        <span className={css.label}>folovers</span>
+                        <span className={css.quantity}>{stats.folowers ?? 0}</span>
+                    </li>
+                    <li key="views">
+                        <span className={css.label}>views</span>
+                        <span className={css.quantity}>{stats.views ?? 0}</span>
+                    </li>
+                    <li key="likes">
+                        <span className={css.label}>likes</span>
+                        <span className={css.quantity}>{stats.likes ?? 0}</span>
+                    </li>
+                </ul>
             </div>
 
 }
