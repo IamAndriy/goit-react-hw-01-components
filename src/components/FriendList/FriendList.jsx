@@ -1,5 +1,6 @@
 import css from "./FriendList.module.css";
 import {FriendListItem} from "./FriendListItem";
+import propTypes from "prop-types";
 
 export const  FriendList = ({friends=[]}) => {
     return <section className={css.section}>
@@ -15,4 +16,8 @@ export const  FriendList = ({friends=[]}) => {
                     </ul>
                 }
            </section>
+}
+
+FriendList.propTypes = {
+    friends: propTypes.array,
 }
