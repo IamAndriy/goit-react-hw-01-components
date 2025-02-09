@@ -1,6 +1,6 @@
 import css from "./Statistics.module.css";
-import propTypes from "prop-types";
 import getRandomHexColor from "helpers/getRandomHexColor";
+import PropTypes from "prop-types";
 
 export const Statistics = ({title, stats=[]})=> {
 
@@ -24,6 +24,6 @@ export const Statistics = ({title, stats=[]})=> {
 }
 
 Statistics.propTypes = {
-    title: propTypes.string,
-    stats: propTypes.array,
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.object),
 }

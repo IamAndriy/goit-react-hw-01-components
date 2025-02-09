@@ -1,6 +1,7 @@
 import { TransactionsItem } from "./TransactionsItem";
 import css from "./Transactions.module.css";
 import propTypes from "prop-types";
+import PropTypes from "prop-types";
 
 export const TransactionHistory = ({items=[]}) => {
     
@@ -26,6 +27,6 @@ export const TransactionHistory = ({items=[]}) => {
             </section>
 }
 
-TransactionHistory.prototype = {
-    items: propTypes.array,
+TransactionHistory.propTypes = {
+    items: propTypes.arrayOf(PropTypes.object),
 }
